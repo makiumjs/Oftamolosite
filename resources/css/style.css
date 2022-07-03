@@ -1,0 +1,222 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root{
+    --bluino:  rgb(78, 109, 213);
+    --bluinoOp:  rgba(78, 109, 213, .45);
+    }
+
+/* navbar */
+.navbar{
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(39, 22, 51, 0.35);
+    backdrop-filter: blur(8px);
+}
+
+.navGlassIcon{
+    color: aliceblue;
+    font-size: 50px;
+    transition: .4s;
+}
+
+.navGlassIcon:hover{
+    color: var(--bluino);
+}
+
+.nav-item:hover{
+    transition: scale(1.2) !important;
+}
+
+.nav-link{  
+    color: white !important;
+    padding-left: 8px !important;
+}
+
+.nav-link:hover{
+    background-color: rgba(154, 92, 181, .45);
+}
+
+@media screen and (min-width: 992px) {
+    .nav-link{
+        padding: 5px 20px !important;
+        border-radius: 0px 25px 0px 25px;
+        transition: .3s;
+    }
+}
+
+.navbar-toggler:hover{
+    box-shadow: none;
+}
+
+/* footer */
+.icon-footer{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.icon-glass-footer{
+    font-size: 40px;
+    padding: 15px;
+}
+
+/* index */
+/* header */
+/* blur text */
+.blur{
+    color: transparent;
+    text-shadow: 0 0 13px #fff;
+    transition: .6s;
+}
+
+.blur:hover{
+    color: white;
+    text-shadow: none;
+    text-shadow: 2px 2px 8px black;
+}
+
+.bg-header{
+    background: url(https://images.unsplash.com/photo-1494869042583-f6c911f04b4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 0px -45px 30px #FFFFFF;
+}
+
+.index-custom-container{
+    position: relative;
+}
+
+.index-custom-container::before{
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 5px;
+    left: -8px;
+}
+
+.text-shadow-black{
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
+}
+
+.imgs{
+    padding-top: 50px;
+    
+}
+/* .tpad{
+    padding-left: 100px;
+
+} */
+.tpad h2{
+    font-weight: 500;
+}
+
+
+/* services */
+.bgsection1 {
+    background-color: rgb(242, 243, 249);
+    margin: 100px 0px;
+}
+
+.bgsection2 {
+    background-color: #b2f7ef;
+    margin: 100px 0px;
+}
+
+.bgsection1 img, .bgsection2 img{
+    border-radius: 5px;
+}
+
+.services-header{
+    height: 450px;
+    background-image: linear-gradient(-45deg, #f7d6e0 25%, #eff7f6 50%, #b2f7ef 75%, #7bdff2 100%);
+    background-size: 200%;
+    background-position: 0% 0%;
+    transition: .6s;
+
+}
+
+.services-header:hover{
+    background-position: 100% 0%;
+    transition: .6s;
+}
+
+.services-header h1{
+    border-bottom: 3px solid var(--bluino);
+    padding-bottom: 10px;
+}
+
+.detail-button{
+    background-color: transparent;
+    padding: 5px 25px;
+    border-radius: 5px;
+    transition: .3s;
+    border: 1px solid black;
+}
+
+.detail-button:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* contatti */
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #f7d6e0 25%, #eff7f6 50%, #b2f7ef 75%, #7bdff2 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .contacts{  
+    color: black !important;
+    padding-left: 8px !important;
+}
+
+.contacts:hover{
+    background-color: rgba(154, 92, 181, .45);
+    color: white !important
+}
+@media screen and (min-width: 992px) {
+    .contacts{
+        padding: 5px 20px !important;
+        border-radius: 0px 25px 0px 25px;
+        transition: .3s;
+    }
+}
